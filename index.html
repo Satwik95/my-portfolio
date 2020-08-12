@@ -13,6 +13,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 	
 	<link rel="stylesheet" 	type="text/css" href="default.css">
+
+		<link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 <body>
 	<section class="s1">
@@ -31,8 +33,7 @@
 					</div>
 
 					<ul id="navigation">
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#contact-form">Contact</a></li>
 					</ul>
 				
 				</div>
@@ -41,10 +42,10 @@
 					<h5 style="text-align: center; line-height: 0;"> Select your theme! </h5>
 
 					<div id="theme-option-wrapper">
-						<div id="light-mode" class="theme-dot"></div>
-						<div id="blue-mode" class="theme-dot"></div>
-						<div id="green-mode" class="theme-dot"></div>
-						<div id="purple-mode" class="theme-dot"></div>
+						<div data-mode="light" id="light-mode" class="theme-dot"></div>
+						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+						<div data-mode="green" id="green-mode" class="theme-dot"></div>
+						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
 					</div>
 					<p id="setting-note">*Theme will be saved for next visit</p>
 
@@ -54,9 +55,7 @@
 						<div id="preview">
 							<div id="corner-tl" class="corner"></div>
 							<div id="corner-tr" class="corner"></div>
-							<h3>What I Do</h3>
-							<p>CS Grad@RIT |
-							Ex-SDE at Trimble</p>
+							<h4>"You miss 100% of the shots you don't take.- Wayne Gretzky"<br> - Michael Scott</h4>
 							<div id="corner-br" class="corner"></div>
 							<div id="corner-bl" class="corner"></div>
 						</div>
@@ -69,19 +68,110 @@
 
 	<section class="s2">
 		<div class="main-container">
-			About
+			<div class="about-wrapper">
+				<div class="about-me">
+					<h4>About me</h4>
+					<p>Hi! I am a CS grad student at RIT, passionate about machine learning, and coding!</p> 
+					<p>My prior experiences include internships at Trimble Inc and Apollo Munich, and research at MIT, Manipal working on lung cancer detection using 3D CNN.</p>
+					<hr>
+					<h4>Top expertise</h4>
+					<p>Generalist Software Engineer: Backend/DevOps/Machine learning.<a target="_blank" href="resume.pdf">Download Resume</a></p>
+
+					<div id="skills">
+						<ul>
+							<li>Python</li>
+							<li>Java</li>
+							<li>MySQL</li>
+							<li>Sklearn/Pytorch/Numpy</li>
+						</ul>
+						<ul>
+							<li>MongoDB</li>
+							<li>Javascript</li>
+							<li>Html/CSS</li>
+							<li>AWS(EC2/S3/IAM)</li>
+						</ul>
+					</div>
+
+
+				</div>
+				<div class="social-links">
+					<img id="social_img" src="images/follow.jpg">
+					<h3>Find me on Github/Linkedin/Leetcode </h3>
+					<a target="_blank" contacthref="https://www.linkedin.com/in/satwik-mishra/"> Linked: @satwik-mishra</a>
+					<br>
+					<a target="_blank" href="https://github.com/Satwik95"> Github: @Satwik95</a>
+					<br>
+					<a target="_blank" href="https://leetcode.com/satwik95/"> Leetocde: @satwik95</a>
+				</div>
+			</div>>
 		</div>
 	</section>
 	<section class="s1">
 		<div class="main-container">
-			Portfolio
+			<h3 style="text-align: center"> Projects </h3>
+			<div class="post-wrapper">
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/pacman.jpg">
+						<div class="post-preview">
+							<h6 class="post-title"> Pacman: Java/Search Algo/AI</h6>
+							<p class="post-intro"> Implemented Pacman, using java awt, created intelligent bots.</p>
+							<a target="_blank" href="https://github.com/Satwik95/Simple-Pacman">See repo!<a>
+						</div>
+					</div>
+				</div>
+				
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/math.jpg">
+						<div class="post-preview">
+							<h6 class="post-title"> CROHME 19: Math Experssion Segmentation+Classification </h6>
+							<p class="post-intro">a pipeline for multithreaded preprocessing and feature extraction, an MST as the segmentation model, and random forest for classification.</p>
+							<a target="_blank" href="https://github.com/Satwik95/Crohme19-segmentation-clf">See repo!<a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/movie.jpg">
+						<div class="post-preview">
+							<h6 class="post-title">Movie Recommendation using Collaborative Filtering </h6>
+							<p class="post-intro">Movie Recommendation system based on collaborative filtering and sentiment analysis.</p>
+							<a target="_blank" href="https://github.com/Satwik95/Movie-Recommender">See repo!<a>
+						</div>
+					</div>
+				</div>
+
+			</div>
 		</div>
 	</section>
 	<section class="s2">
 		<div class="main-container">
-			Contact
+			<h3 style="text-align: center"> Reach out to me </h3>
+
+			<form id="contact-form">
+
+				<a name="contact"></a>
+
+				<label>Name</label>
+				<input class="input-field" type="text" name="name">
+
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+
+				<input id="submit-btn" type="submit" value="Send">
+			</form>
+
 		</div>
 	</section>
-
+<script type="text/Javascript" src="script.js"></script>
 </body>
 </html>
