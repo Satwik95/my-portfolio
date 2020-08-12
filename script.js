@@ -2,6 +2,13 @@ console.log("hi")
 
 let themeDots = document.getElementsByClassName('theme-dot')
 let theme = localStorage.getItem('theme')
+let contact = document.getElementById('contact')
+
+contact.addEventListener('click', function(){
+	console.log("hi")
+		window.open('mailto:satwik.mishra1995@gmail.com');
+	})
+
 
 if(theme==null){
 	setTheme("light")
