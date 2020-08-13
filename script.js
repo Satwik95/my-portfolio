@@ -3,6 +3,13 @@ console.log("hi")
 let themeDots = document.getElementsByClassName('theme-dot')
 let theme = localStorage.getItem('theme')
 let contact = document.getElementById('contact')
+let office = document.getElementById('dot-2')
+
+office.addEventListener('click', function(){
+	console.log("hi")
+		window.open("https://www.youtube.com/watch?v=Vmb1tqYqyII", "_blank");
+	})
+
 
 contact.addEventListener('click', function(){
 	console.log("hi")
