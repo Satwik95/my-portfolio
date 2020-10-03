@@ -1,4 +1,3 @@
-# Source code for my portfolio
 Hosted: https://bit.ly/31Lxt74
 
 ## Acknowledgement
